@@ -62,6 +62,7 @@
             this.ctGradosC.TabIndex = 2;
             this.ctGradosC.Text = "0.00";
             this.ctGradosC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ctGradosC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ctGradosC_KeyPress);
             // 
             // ctGradosF
             // 
@@ -71,6 +72,7 @@
             this.ctGradosF.TabIndex = 3;
             this.ctGradosF.Text = "0.00";
             this.ctGradosF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ctGradosF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ctGradosF_KeyPress);
             // 
             // btAceptar
             // 
@@ -78,8 +80,9 @@
             this.btAceptar.Name = "btAceptar";
             this.btAceptar.Size = new System.Drawing.Size(164, 23);
             this.btAceptar.TabIndex = 4;
-            this.btAceptar.Text = "Aceptar";
+            this.btAceptar.Text = "&Aceptar";
             this.btAceptar.UseVisualStyleBackColor = true;
+            this.btAceptar.Click += new System.EventHandler(this.btAceptar_Click);
             // 
             // Conver
             // 
@@ -95,6 +98,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Conver";
             this.Text = "Conversion de Temperaturas";
+            this.Load += new System.EventHandler(this.Conver_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
